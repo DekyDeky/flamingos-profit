@@ -1,0 +1,39 @@
+@import url(arredondar-cantos.css);
+
+.tabelas {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.tabela {
+    font-size: var(--font-table-size);
+    width: 800px;
+}
+
+.cell {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.tabela_titulo {
+    background-color: var(--table-title-bg-color);
+    color: var(--secondary-text-color);
+
+    padding: 10px;
+}
+
+.item {
+    border: 2px solid var(--primary-text-color);
+    padding-left: 10px;
+
+    background-color: var(--table-bg-color);
+    color: var(--primary-text-color);
+}
+
+.tabela_item-valor {
+    padding-left: 0;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+.valores-input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.valores-input::-webkit-input-placeholder {
+    font-family: var(--font);
+}
+
+.valores-input:-ms-input-placeholder {
+    font-family: var(--font);
+}
+
+.valores-input:-moz-placeholder {
+    font-family: var(--font);
+}
+
+.valores-input::-moz-placeholder {
+    font-family: var(--font);
+}

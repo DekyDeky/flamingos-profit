@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --background-color: #A87676;
+
+    --table-bg-color: #CA8787;
+    --table-title-bg-color: #FFD0D0;
+    --line-table-color: #FFD0D0;
+    --line-table-title-color: #A87676;
+
+    --primary-text-color: #FFD0D0;
+    --secondary-text-color: #CA8787;
+
+    --button-color: #FFD0D0;
+    --button-color-hover: #CA8787;
+
+    --menu-bg-color: #CA8787;
+    --input-bg-color: #A87676;
+    --button-switch-color: #FFD0D0;
+    --placeholder-color: #CA8787;
+
+
+    --font: "Architects Daughter", cursive;
+
+    --font-table-size: 40px;
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: var(--font);
+}
+
+.inserir-valors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#background {
+    transition: .5s;
+}

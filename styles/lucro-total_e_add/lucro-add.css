@@ -1,0 +1,9 @@
+@import url(add-button.css);
+@import url(lucro-total.css);
+
+.lucro-add {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}

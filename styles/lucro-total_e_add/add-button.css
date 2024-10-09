@@ -1,0 +1,19 @@
+.add {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--button-color);
+
+    font-size: 60px;
+    color: var(--secondary-text-color);
+}
+
+.add-lucro {
+    width: 64px;
+    height: 64px;
+}
+
+.add:hover {
+    background-color: var(--button-color-hover);
+    color: var(--primary-text-color);
+    transition: .5s;
+}

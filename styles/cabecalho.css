@@ -1,0 +1,25 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 0;
+    width: 100%;
+}
+
+.title-text {
+    font-size: 64px;
+    color: var(--primary-text-color);
+}
+
+.title-img {
+    border-radius: 15px;
+    margin: 0 45px;
+    width: 100px;
+}
+
+.cabecalho_linha {
+    border: 5px solid var(--primary-text-color);
+    border-radius: 5px;
+    width: 80%;
+}

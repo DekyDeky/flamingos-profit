@@ -1,0 +1,45 @@
+@import url(placeholder.css);
+@import url(toggle-switch.css);
+@import url(botao.css);
+
+.inserir-valors {
+    background-color: var(--menu-bg-color);
+
+    width: 650px;
+    height: 700px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+}
+
+.form-valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.valores-titulo {
+    color: var(--primary-text-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.valores-input {
+    background-color: var(--input-bg-color);
+    border: none;
+    border-radius: 15px;
+
+    height: 80px;
+    width: 500px;
+
+    font-size: 40px;
+    font-family: var(--font);
+    color: var(--primary-text-color);
+    padding-left: 15px;
+}

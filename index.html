@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamingo's Profit</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="styles/tabelas/tabelas.css">
+    <link rel="stylesheet" href="styles/lucro-total_e_add/lucro-add.css">
+    <link rel="stylesheet" href="styles/inserir-valores/menu.css">
+</head>
+<body>
+    <div id="background">
+        <header class="cabecalho">
+            <h1 class="title-text">Flamingo's</h1>
+            <img class="title-img" src="imgs/icon.svg" alt="">
+            <h1 class="title-text">Profit</h1>
+        </header>
+        <hr class="cabecalho_linha">
+        
+        <section class="tabelas">
+            <table class="tabela tabelas_lucros" id="tabelaLucros">
+                <tr class="linha tabela_titulo">
+                    <th class="cell item-titulo tabela_titulo_item">Lucro</th>
+                    <th class="cell item-titulo tabela_titulo_item">Valor</th>
+                </tr>
+                <tr class="linha tabela_titulo" id="linha-total-lucro">
+                    <th class="cell item-titulo tabela_titulo_item">Total</th>
+                    <th class="cell item-titulo tabela_titulo_item"></th>
+                </tr>
+            </table>
+            
+            <table class="tabela tabelas_dividas" id="tabelaDividas">
+                <tr class="linha tabela_titulo">
+                    <th class="cell item-titulo tabela_titulo_item">Dívida</th>
+                    <th class="cell item-titulo tabela_titulo_item">Valor</th>
+                </tr>
+                <tr class="linha tabela_titulo" id="linha-total-divida">
+                    <th class="cell item-titulo tabela_titulo_item">Total</th>
+                    <th class="cell item-titulo tabela_titulo_item"></th>
+                </tr>
+            </table>
+        </section>
+    
+        <section class="lucro-add">
+            <table class="lucro-total">
+                <tr class="lucro-total_linha">
+                    <th class="lucro-total_celula">Lucro Total</th>
+                    <th class="lucro-total_celula">R$ 0,00</th>
+                </tr>
+            </table>
+            <button class="add add-lucro" id="add_button">+</button>
+            <button class="add add-lucro" id="remove_button">-</button>
+        </section>
+    </div>
+
+    <section class="inserir-valors" id="inserir-valors">
+        <form class="form-valores">
+            <h2 class="valores-titulo">Inserir Valores</h2>
+            <input class="valores-input" id="input-nome" type="text" placeholder="Lucro/Dívida" required> <br>
+            <input class="valores-input" id="input-valor" type="number" step="any" min="0.01" placeholder="Valor (R$)" required>
+            
+            <div class="toggle-switch">
+                <input type="checkbox" class="switch_lucro-divida" id="toggle">
+                <label for="toggle" class="switch">
+                    <span class="text lucro">Lucro</span>
+                    <span class="text divida">Dívida</span>
+                </label>
+            </div>
+
+            <button class="valores-botao-adicionar" id="botao-adicionar">Adicionar</button>
+            <a class="add fechar" id="fechar">Cancelar</a>
+        </form>
+    </section>
+
+    <script src="javaScript/tabela/storage-data.js"></script>
+    <script src="javaScript/toggle-switch/toggle-switch.js"></script>
+    <script src="javaScript/tabela/add-menu.js"></script>
+    <script src="javaScript/tabela/add-item.js"></script>
+    <!--
+        <script src="javaScript/tabela/remove-item.js"></script>
+    -->
+</body>
+</html>

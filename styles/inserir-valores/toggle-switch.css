@@ -1,0 +1,57 @@
+.toggle-switch {
+    width: 100%;
+    height: 80px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.switch {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: var(--input-bg-color); /* Cor de fundo */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: background-color 0.3s ease;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 10px;
+
+    height: 75%;
+    width: 50%;
+
+    font-size: 30px;
+    color: var(--primary-text-color); /* Cor do texto */
+}
+
+.lucro {
+    border-radius: 15px 0 0 15px;
+    color: var(--secondary-text-color); /* Cor do texto Lucro */
+    background-color: var(--button-switch-color);
+    transition: .5s;
+}
+  
+.divida {
+    border-radius:0 15px 15px 0;
+    color: var(--placeholder-color); /* Cor do texto Dívida */
+}
+  
+input:checked + .switch .lucro {
+    color: var(--secondary-text-color); /* Cor do texto Lucro */
+    background-color: transparent;
+}
+  
+input:checked + .switch .divida {
+    background-color: var(--button-switch-color);
+    transition: .5s;
+}
